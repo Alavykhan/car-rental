@@ -22,7 +22,7 @@ const Banner = () => {
                     </div>
                     <div className='flex justify-between'>
                         <div className='absolute top-5 left-4'>
-                        <p className='text-black text-xl font-semibold font-title'>$160/Day</p>
+                        <p className='text-black text-xl font-semibold font-title'>$1600/Day</p>
                         </div>
                         <div className='absolute top-5 right-4'>
                         <button className="btn btn-circle">
@@ -33,7 +33,7 @@ const Banner = () => {
                     </div>
                </div>
                 </div>
-                <div className='bg-white rounded-xl px-5 absolute left-36 bottom-16 flex justify-between items-center w-5/6 py-5 text-black text-lg font-semibold'>
+                <div className='bg-white rounded-xl px-5 absolute left-20 bottom-16 flex justify-between items-center w-11/12 py-5 text-black text-lg font-semibold'>
                 <div className='flex items-center gap-2'>
                 <FaCarSide className='text-red-700' />
                 <p>On Time Pick Up</p>

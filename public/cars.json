@@ -1,0 +1,162 @@
+[
+    {
+        "id": "1",
+        "title": "BMW Series7",
+        "rating": "5",
+        "model": "BMW Series7 2023",
+        "price": "200",
+        "description" : "he BMW Series 7 is a luxurious full-size sedan that combines cutting-edge technology, opulent comfort, and dynamic performance for an exceptional driving experience.",
+        "condition": "Excellent", 
+        "img": "https://i.ibb.co.com/y4k0CP8/BMW-7.png"
+    },
+    {
+        "id": "2",
+        "title": "Bentley Continental",
+        "rating": "5",
+        "model": "Bentley Continental 2022",
+        "price": "250",
+        "description" : "The Bentley Continental is a grand tourer that embodies luxury and performance, featuring exquisite craftsmanship and a powerful engine for an unparalleled driving experience.",
+        "condition": "Very Good",
+        "img": "https://i.ibb.co.com/TYcwBYh/Bentley-continental.png" 
+    },
+    {
+        "id": "3",
+        "title": "Bentley Continental GT",
+        "rating": "5",
+        "model": "Bentley Continental GT 2023",
+        "price": "300",
+        "description" : "The Bentley Continental GT is a stunning grand tourer that seamlessly blends breathtaking design, lavish interiors, and exhilarating performance for the ultimate driving experience.",
+        "condition": "Excellent",
+        "img": "https://i.ibb.co.com/HDrqT5j/bentley-continental-gt.png" 
+    },
+    {
+        "id": "4",
+        "title": "Bentley Continental",
+        "rating": "4.5",
+        "model": "Bentley Continental 2024",
+        "price": "200",
+        "description" : "The Bentley Continental is a grand tourer that embodies luxury and performance, featuring exquisite craftsmanship and a powerful engine for an unparalleled driving experience.",
+        "condition": "Excellent",
+        "img": "https://i.ibb.co.com/sWjg8jN/Bentley-Continent.png" 
+    },
+    {
+        "id": "5",
+        "title": "Bentley Spots",
+        "rating": "5",
+        "model": "Bentley Sports 2023",
+        "price": "250",
+        "description" : "The Bentley Speed is a high-performance variant of the Continental, delivering unmatched power and agility while exuding the brand's signature luxury and craftsmanship.",
+        "condition": "Excellent",
+        "img": "https://i.ibb.co.com/DM3bwZc/bentley-spots.png"  
+    },
+    {
+        "id": "6",
+        "title": "Rolls Royce",
+        "rating": "5",
+        "model": "Rolls Royce 2022",
+        "price": "450",
+        "description" : "Rolls-Royce epitomizes automotive luxury, offering bespoke craftsmanship and a serene driving experience that defines elegance and prestige.",
+        "condition": "Excellent",
+        "img": "https://i.ibb.co.com/2gQ5S9Z/rolls-royce.png" 
+    },
+    {
+        "id": "7",
+        "title": "Rolls Royce White",
+        "rating": "5",
+        "model": "Rolls Royce 2015",
+        "price": "400",
+        "description" : "The 2015 Rolls-Royce combines timeless elegance with cutting-edge technology, delivering an unparalleled luxury experience and a smooth, powerful ride.",
+        "condition": "Very Good",
+        "img": "https://i.ibb.co.com/Vqxf2RL/rolls-royce-2015.png"  
+    },
+    {
+        "id": "8",
+        "title": "Rolls Royce Phantom",
+        "rating": "5",
+        "model": "Rolls Royce 2022",
+        "price": "600",
+        "description" : "The Rolls-Royce Phantom is the ultimate luxury sedan, renowned for its majestic presence, exquisite craftsmanship, and a supremely comfortable ride.",
+        "condition": "Excellent",
+        "img": "https://i.ibb.co.com/Wt3ZFs2/Rolls-Royce-Phantom.png" 
+    },
+    {
+        "id": "9",
+        "title": "Rolls Royce Phantom Black",
+        "rating": "5",
+        "model": "Rolls Royce 2016",
+        "price": "500",
+        "description" : "The Rolls-Royce Phantom is the ultimate luxury sedan, renowned for its majestic presence, exquisite craftsmanship, and a supremely comfortable ride.",
+        "condition": "Excellent",
+        "img": "https://i.ibb.co.com/y5JCYv6/rolls-royce-phantom-2016.png"  
+    },
+    {
+        "id": "10",
+        "title": "Aston Martin Vanquish Zagato",
+        "rating": "5",
+        "model": "Aston Martin Vanquish Zagato 2022",
+        "price": "700",
+        "description" : "The Aston Martin Vanquish is a stunning supercar that fuses breathtaking design with exhilarating performance, embodying the essence of British luxury and engineering excellence.",
+        "condition": "Excellent",
+        "img": "https://i.ibb.co.com/12TRQpG/Aston-Martin-Vanquish-Zagato.png" 
+    },
+    {
+        "id": "11",
+        "title": "Ashton Martin Vantage",
+        "rating": "4.5",
+        "model": "Ashton Martin Vantage 2023",
+        "price": "650",
+        "description" : "The Aston Martin Vantage is a sleek sports car that delivers thrilling performance and agile handling, wrapped in an iconic design that exudes British elegance.",
+        "condition": "Excellent",
+         "img": "https://i.ibb.co.com/gR8Jcwx/ashton-martin-vantage.png"
+    },
+    {
+        "id": "12",
+        "title": "Audi R8",
+        "rating": "5",
+        "model": "Audi R8 2024",
+        "price": "600",
+        "description" : "The Audi R8 is a high-performance supercar that combines cutting-edge technology, stunning design, and exhilarating driving dynamics for an unforgettable experience.",
+        "condition": "Excellent", 
+        "img": "https://i.ibb.co.com/jMcLGqc/audi-r8-2024.png"
+    },
+    {
+        "id": "13",
+        "title": "Mercedes AMG G",
+        "rating": "4.5",
+        "model": "Mercedes 2023",
+        "price": "550",
+        "description" : "The Mercedes-AMG G-Class is an iconic luxury SUV that blends rugged off-road capability with high-performance engineering and opulent interior design.",
+        "condition": "Excellent",
+         "img": "https://i.ibb.co.com/Z2FTZDd/mercedes-amg-G.png"
+    },
+    {
+        "id": "14",
+        "title": "Mercedes G Wagon",
+        "rating": "5",
+        "model": "Mercedes Wagon 2023",
+        "price": "750",
+        "description" : "The Mercedes G-Class, often referred to as the G-Wagon, is a luxurious off-road SUV that combines legendary ruggedness with sophisticated style and cutting-edge technology.",
+        "condition": "Excellent",
+        "img": "https://i.ibb.co.com/WfwnzS4/Mercedes-G-wagon.png" 
+    },
+    {
+        "id": "15",
+        "title": "BMW G8x",
+        "rating": "5",
+        "model": "BMW G8x 2023",
+        "price": "450",
+        "description" : "The BMW G8x series, encompassing the latest 3 Series and M models, showcases a perfect balance of performance, luxury, and advanced technology in a dynamic and stylish package.",
+        "condition": "Excellent",
+        "img": "https://i.ibb.co.com/jJrpv82/bmw-g8x.png" 
+    },
+    {
+        "id": "16",
+        "title": "Audi A8",
+        "rating": "4.5",
+        "model": "Audi A8 2024",
+        "price": "550",
+        "description" : "The Audi A8 is a flagship luxury sedan that offers a perfect blend of advanced technology, refined comfort, and powerful performance, setting the standard for sophistication in the automotive world.",
+        "condition": "Excellent",
+        "img": "https://i.ibb.co.com/j5CGgLk/Audi-a8.png" 
+    }
+]
