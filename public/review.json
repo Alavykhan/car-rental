@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+      "name": "John Smith",
+      "rating": 5,
+      "image": "https://i.ibb.co.com/RQWjPyz/img-2.jpg",
+      "description": "Car RentalBD provided an exceptional experience! The luxury sedan was spotless, and the service was top-notch. Highly recommend for anyone needing a premium ride!"
+    },
+    {
+        "id": "2",
+      "name": "Emily Johnson",
+      "rating": 4,
+      "image": "https://i.ibb.co.com/0cLGNtM/img-1.jpg",
+      "description": "Had a great experience renting a convertible for my weekend getaway. The car was in excellent condition, and the staff was very accommodating. Would definitely rent again!"
+    },
+    {
+        "id": "3",
+      "name": "Michael Brown",
+      "rating": 5,
+      "image": "https://i.ibb.co.com/hH8pFjh/img-4.jpg",
+      "description": "Absolutely loved the luxury SUV I rented for my family trip. It was spacious and comfortable, and the pick-up process was smooth. Best car rental service I've used!"
+    },
+    {
+        "id": "4.5",
+      "name": "Sarah Davis",
+      "rating": 4,
+      "image": "https://i.ibb.co.com/ykyXn7K/img-3.jpg",
+      "description": "The service at Car RentalBD was fantastic! The staff was friendly and helpful. The luxury car I rented made my business trip much more enjoyable. Minor hiccup with the drop-off, but overall a great experience."
+    }
+  ]

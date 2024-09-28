@@ -5,7 +5,7 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 px-16">
+            <div className="navbar bg-base-100 px-16 text-white">
                 <div className="navbar-start">
                     <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,8 +39,8 @@ const Navbar = () => {
                        <li><Link to=''>Contacts</Link></li>
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Sign In <RiArrowRightUpLine /></a>
+                <div className="navbar-end ">
+                    <a className="btn text-white">Sign In <RiArrowRightUpLine /></a>
                 </div>
                 </div>
         </div>
