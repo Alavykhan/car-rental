@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '/rentbd-nav.png'
 import { RiArrowRightUpLine } from "react-icons/ri";
+import { AuthContext } from '../../../providers/AuthProviders';
 const Navbar = () => {
+    const {user, logOut}=useContext(AuthContext);
+    const handleLogout=()=>{
+        logOut()
+        .then(result=>console.log(result))
+        .catch(error=>console.log(error))
+    }
     return (
         <div>
             <div className="navbar bg-base-100 px-16 text-white">
@@ -25,6 +32,7 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                       <li><Link to='/'>Home</Link></li>     
                        <li><Link to=''>Cars</Link></li>
                        <li><Link to=''>Bookings</Link></li>
                        <li><Link to=''>Contacts</Link></li>
@@ -34,13 +42,18 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
+                    <li><Link to='/'>Home</Link></li>
                     <li><Link to=''>Cars</Link></li>
                        <li><Link to=''>Bookings</Link></li>
                        <li><Link to=''>Contacts</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end ">
-                    <a className="btn text-white">Sign In <RiArrowRightUpLine /></a>
+                    {
+                        user?.email? <><p className='text-white pr-3'>{user?.displayName}</p> <img className='rounded-full w-12 mr-3' src={user?.photoURL} alt="" /> <button onClick={handleLogout} className="btn text-white">Logout <RiArrowRightUpLine /></button></> :
+                        <Link to='login' className="btn text-white">Login <RiArrowRightUpLine /></Link>
+        
+                    }
                 </div>
                 </div>
         </div>
