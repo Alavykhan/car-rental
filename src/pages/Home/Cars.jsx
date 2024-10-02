@@ -11,7 +11,7 @@ const Cars = () => {
         <div>
              <div className="bg-neutral-800">
               <div className="flex h-48 items-center justify-between px-16">
-                <span className="font-semibold font-title uppercase text-neutral-500 text-white text-6xl">
+                <span className="font-semibold font-title uppercase text-neutral-500 text-white md:text-6xl text-4xl">
                   Vehicles
                 </span>
                 <div className='flex justify-center gap-2'>

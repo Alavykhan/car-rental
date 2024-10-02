@@ -10,30 +10,32 @@ const Banner = () => {
         <div>
             <div className='relative'>
                 <img src={cover} alt="banner" />
-                <div className='absolute top-0 bg-gradient-to-r from-[#151516] to-[rgba(0, 0, 0, 0)] h-full flex justify-between'>
-               <div className='mt-32'>
-               <h1 className='md:text-8xl font-title text-white font-semibold w-2/3 pl-16'>Luxury car rental in Dhaka</h1>
-               <button className="btn bg-red-700 ml-16 text-white mt-5">Rent Now</button>
+                <div className='absolute top-0 bg-gradient-to-r from-[#151516] to-[rgba(0, 0, 0, 0)] h-full'>
+               <div className='flex justify-between'>
+               <div className='md:mt-32 w-full mt-2'>
+               <h1 className='md:text-8xl font-title text-white font-semibold pl-8 md:pl-16'>Luxury car rental in Dhaka</h1>
+               <button className="btn bg-red-700 ml-8 md:ml-16 text-white text-sm md:mt-5">Rent Now</button>
                </div>
                <div>
-                    <div className='mt-32 relative ml-[420px] w-2/4'>
+                    <div className='md:mt-32 relative md:ml-80 ml-36 w-2/4'>
                     <div>
                     <img className='rounded-lg' src={banner} alt="" />
                     </div>
                     <div className='flex justify-between'>
-                        <div className='absolute top-5 left-4'>
-                        <p className='text-black text-xl font-semibold font-title'>$1600/Day</p>
+                        <div className='absolute md:top-5 md:left-4 top-1 left-2'>
+                        <p className='text-black md:text-xl text-sm font-semibold font-title'>$1600/Day</p>
                         </div>
-                        <div className='absolute top-5 right-4'>
+                        <div className='absolute hidden md:visible top-5 right-4'>
                         <button className="btn btn-circle">
-                        <FaArrowRight />
+                        <FaArrowRight className='text-sm' />
                             </button>
                         </div>
                     </div>
                     </div>
                </div>
+               </div>
                 </div>
-                <div className='bg-white rounded-xl px-5 absolute left-20 bottom-16 flex justify-between items-center w-11/12 py-5 text-black text-lg font-semibold'>
+                <div className='bg-white rounded-xl px-5 absolute md:left-20 left-5 bottom-2 md:bottom-16 flex justify-between items-center w-11/12 md:py-5 text-black md:text-lg text-xs md:font-semibold'>
                 <div className='flex items-center gap-2'>
                 <FaCarSide className='text-red-700' />
                 <p>On Time Pick Up</p>
@@ -49,8 +51,8 @@ const Banner = () => {
                 <IoCarSport className='text-red-700' />
                 </div>
                 <div className="divider divider-horizontal"></div>
-                <div className='bg-red-700 rounded-lg px-10 py-4 text-white flex flex-col items-center'>
-                <SlCalender className='text-4xl' /> 
+                <div className='bg-red-700 rounded-lg md:px-10 px-3 md:py-4 py-2 my-1 text-white flex flex-col items-center'>
+                <SlCalender className='md:text-4xl' /> 
                 <button>Book Now</button>
                 </div>
             </div>

@@ -9,9 +9,9 @@ const Reviews = () => {
         .then(data=>setReviews(data))
     },[])
     return (
-        <div className='my-20'>
-            <h2 className='text-5xl font-title font-semibold text-white text-center pb-10'>What People Think About Us</h2>
-         <div className='flex justify-center gap-8'>
+        <div className='md:my-20 my-10'>
+            <h2 className='md:text-5xl font-title font-semibold text-white text-center pb-10'>What People Think About Us</h2>
+         <div className='flex md:flex-row flex-col justify-center items-center gap-8'>
             {
                 reviews.map(review=><Review
                 key={review.id}

@@ -1,11 +1,14 @@
 import React, { useContext } from 'react';
 import photo from '../../assets/imgs/BMW7.png'
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProviders';
 import { FcGoogle } from "react-icons/fc";
-const Login = () => {
 
-    const {signIn, googleSignIn} = useContext(AuthContext)
+
+const Login = () => {
+    const {signIn, googleSignIn} = useContext(AuthContext);
+    const location= useLocation();
+    const navigate= useNavigate();
     const handleLogin = event=>{
         event.preventDefault();
         const form = event.target;
@@ -18,6 +21,7 @@ const Login = () => {
         .then(result=>{
             const loggedUser = result.user;
             console.log(loggedUser);
+            navigate(location?.state ? location?.state : '/')
         })
         .catch(err=>console.log(err))
     }
@@ -28,6 +32,7 @@ const Login = () => {
         .then(result=>{
             const loggedUsed= result.user;
             console.log(loggedUsed); 
+            navigate(location?.state ? location?.state : '/')
         })
         .catch(error=>console.log(error))
     }

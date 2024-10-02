@@ -88,7 +88,7 @@ const Signup = () => {
                 </div>
                 <div className="divider">OR</div>
                     <div className="form-control">
-                    <button onClick={handleGoogleSignIn} className="btn btn-white"><FcGoogle /> Google Login</button>
+                    <button onClick={handleGoogleSignIn} className="btn btn-white"><FcGoogle /> Google Sign Up</button>
                     </div>
             </form>
             </div>
