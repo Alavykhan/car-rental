@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
-
+import ReactStars from "react-rating-stars-component";
 const SingleCar = () => {
     const cars= useLoaderData();
     const {_id, title, rating, model, price, description, condition, img}= cars
@@ -14,6 +14,12 @@ const SingleCar = () => {
                 <p className='text-xl'>Model: {model}</p>
                 <p className='text-xl'>Condition: {condition}</p>
                 <p className='text-xl'>Price: ${price}/day</p>
+                <ReactStars
+                    count={5}
+                    onChange={rating}
+                    size={24}
+                    color="#ffd32c"
+                />
                 <p className='text-xl'>Description: {description}</p>
                 <Link to={`/bookings/${_id}`} className="btn bg-red-700 text-white">Book Now!</Link>
             </div>
