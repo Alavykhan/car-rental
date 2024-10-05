@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { SlCalender } from "react-icons/sl";
 import { FaCarSide } from "react-icons/fa6";
 import { IoCarSport } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 const Banner = () => {
     return (
         <div>
@@ -14,16 +15,17 @@ const Banner = () => {
                <div className='flex justify-between'>
                <div className='md:mt-32 w-full mt-2'>
                <h1 className='md:text-8xl font-title text-white font-semibold pl-8 md:pl-16'>Luxury car rental in Dhaka</h1>
-               <button className="btn bg-red-700 ml-8 md:ml-16 text-white text-sm md:mt-5">Rent Now</button>
+               <Link to='http://localhost:5173/cars'><button className="btn bg-red-700 ml-8 md:ml-16 text-white text-sm md:mt-5">Rent Now</button></Link>
                </div>
                <div>
+                <Link to='http://localhost:5173/singlecar/66fd31820792cfa42ff7adbc' >
                     <div className='md:mt-32 relative md:ml-80 ml-36 w-2/4'>
                     <div>
                     <img className='rounded-lg' src={banner} alt="" />
                     </div>
                     <div className='flex justify-between'>
                         <div className='absolute md:top-5 md:left-4 top-1 left-2'>
-                        <p className='text-black md:text-xl text-sm font-semibold font-title'>$1600/Day</p>
+                        <p className='text-black md:text-xl text-sm font-semibold font-title'>$500/Day</p>
                         </div>
                         <div className='absolute hidden md:visible top-5 right-4'>
                         <button className="btn btn-circle">
@@ -32,6 +34,7 @@ const Banner = () => {
                         </div>
                     </div>
                     </div>
+                    </Link>
                </div>
                </div>
                 </div>
@@ -51,10 +54,12 @@ const Banner = () => {
                 <IoCarSport className='text-red-700' />
                 </div>
                 <div className="divider divider-horizontal"></div>
+                <Link to='http://localhost:5173/cars'>
                 <div className='bg-red-700 rounded-lg md:px-10 px-3 md:py-4 py-2 my-1 text-white flex flex-col items-center'>
                 <SlCalender className='md:text-4xl' /> 
-                <button>Book Now</button>
+                 <button>Book Now</button>
                 </div>
+                </Link>
             </div>
             </div>
         
