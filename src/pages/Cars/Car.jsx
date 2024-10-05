@@ -6,7 +6,7 @@ const Car = ({car}) => {
     return (
         <div>
             <Link to={`/singlecar/${_id}`}>
-            <div className='w-[450px] h-[350px] bg-stone-100 rounded-xl text-black relative'> 
+            <div className='md:w-[450px] h-[350px] bg-stone-100 rounded-xl text-black relative'> 
             <h2 className='font-semibold font-title text-xl pl-7 pt-5'>{title}</h2>
             <p className='font-medium text-lg pl-7'>${price}<span className='text-base text-stone-500'>/day</span></p>
             <div className='flex justify-center items-center'>

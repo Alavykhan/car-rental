@@ -1,10 +1,10 @@
 import React from 'react';
 
 const SingleBookings = ({booking, handleDelete}) => {
-    const {img, title, model, }= booking
+    const {img, carName, date, time, price, _id }= booking
+   
+    console.log(booking);
     return (
-        <div>
-            {/* row 1 */}
             <tr>
                     <th>
                     <label>
@@ -14,29 +14,27 @@ const SingleBookings = ({booking, handleDelete}) => {
                     <td>
                     <div className="flex items-center gap-3">
                         <div className="avatar">
-                        <div className="mask mask-squircle h-12 w-12">
+                        <div className="h-12 w-24">
                             <img
-                            src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+                            src={img}
                             alt="Avatar Tailwind CSS Component" />
                         </div>
-                        </div>
-                        <div>
-                        <div className="font-bold">Hart Hagerty</div>
-                        <div className="text-sm opacity-50">United States</div>
                         </div>
                     </div>
                     </td>
                     <td>
-                    Zemlak, Daniel and Leannon
+                    {carName}
                     <br />
-                    <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
+                    <span className="badge badge-ghost badge-sm">{date}</span>
                     </td>
-                    <td>Purple</td>
+                    <td>{time}</td>
                     <th>
-                    <button className="btn btn-ghost btn-xs">details</button>
+                    <span className="btn btn-ghost btn-xs">{price}</span>
+                    </th>
+                    <th>
+                    <button onClick={()=>handleDelete(_id)} className="btn bg-red-700 btn-sm text-white">Delete</button>
                     </th>
                 </tr>
-        </div>
     );
 };
 

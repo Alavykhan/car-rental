@@ -7,6 +7,7 @@ import SingleCar from "../pages/SingleCar/SingleCar";
 import Bookings from "../pages/Bookings/Bookings";
 import Cars from "../pages/Cars/Cars";
 import MyBookings from "../pages/MyBookings/MyBookings";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
         },
         {
           path:'/bookings/:id',
-          element:<Bookings/>,
+          element:<PrivateRoute><Bookings/></PrivateRoute>,
           loader:({params})=>fetch(`http://localhost:5000/cars/${params.id}`)   
         },
         {
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
         },
         {
           path:'/mybookings',
-          element:<MyBookings/>,
+          element:<PrivateRoute><MyBookings/></PrivateRoute>,
         }
       ]
     },

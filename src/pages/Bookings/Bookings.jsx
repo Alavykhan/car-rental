@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { AuthContext } from '../../providers/AuthProviders';
 const Bookings = () => {
     const cars = useLoaderData();
     const {_id, title, price, img} = cars;
-
+    const {user} = useContext(AuthContext);
     const handleBooking=event=>{
         event.preventDefault();
         const form = event.target;
         const name= form.name.value;
+        const email = form.email.value;
+        const carName = form.carName.value;
         const price = form.price.value;
         const date = form.date.value;
         const time = form.time.value;
@@ -17,7 +20,10 @@ const Bookings = () => {
             price,
             date,
             time,
-            img
+            img,
+            _id,
+            email,
+            carName
         }
         console.log(booking);
         fetch('http://localhost:5000/bookings', {
@@ -50,9 +56,21 @@ const Bookings = () => {
                     <div className='grid grid-cols-2 gap-5'>
                     <div className="form-control">
                     <label className="label">
+                        <span className="label-text">Customer Name</span>
+                    </label>
+                    <input type="text" name='name' defaultValue={user?.displayName} placeholder="Name" className="input input-bordered" required />
+                    </div>
+                    <div className="form-control">
+                    <label className="label">
+                        <span className="label-text">Email</span>
+                    </label>
+                    <input type="email" name='email' defaultValue={user?.email}  className="input input-bordered" required />
+                    </div>
+                    <div className="form-control">
+                    <label className="label">
                         <span className="label-text">Car Name</span>
                     </label>
-                    <input type="text" name='name' defaultValue={title} placeholder="email" className="input input-bordered" required />
+                    <input type="text" name='carName' defaultValue={title}  className="input input-bordered" required />
                     </div>
                     <div className="form-control">
                     <label className="label">
